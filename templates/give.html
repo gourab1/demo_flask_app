@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+    <main>
+      <h2>Here is a list of items you have donated </h2>
+      <ul>
+        {% for item in donations %}
+        <li>{{item}}</li>
+        {% endfor %}
+      </ul>
+     </main>
+
+{% endblock %}

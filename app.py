@@ -4,7 +4,14 @@ import requests
 app = Flask(__name__)
 @app.route('/')
 def index():
-    return render_template('basic.html')
+    name = 'Bani'
+    return render_template('home.html', name=name)
+
+@app.route('/give')
+def give():
+    name = 'Bani'
+    donations = ['sofa', 'table lamp']
+    return render_template('give.html', name=name, donations=donations)
     
 @app.route('/get')
 def get():
