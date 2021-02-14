@@ -1,0 +1,16 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+    <main>
+        <div>
+          <p>Please fill up he details about you donation: </p>
+          <form action="{{url_for('thankyou')}}">
+              <label for="donation_item">Item(s) you want to donate (if multiple items, please separate each item by a comma): </label>
+              <input type="text" name="donation_item">
+              <input type="submit" value="Donate this item">
+          </form>
+          </div>
+     </main>
+
+{% endblock %}

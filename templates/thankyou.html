@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+    <main>
+        <div>
+            <h1>Thank you {{name}} for donating the {{donation_item}}</h1>
+            <div>
+              <button onclick = "window.location.href= '{{url_for('form_donation')}}'"> Click here to make another donation </button>
+             </div>
+          </div>
+     </main>
+
+{% endblock %}
